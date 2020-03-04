@@ -14,7 +14,7 @@ control 'ASVS-14.4.4' do                        # A unique ID for this control
   title 'Content type Options = no sniff'
   desc 'All responses should contain X-Content-Type-Options=nosniff'
   describe http('http://192.168.0.6:3000') do                  # The actual test
-    its('headers.content-type-options') { should cmp 'nosniff' } 
+    its('headers.x-content-type-options') { should cmp 'nosniff' } 
   end
 end
 
