@@ -1,0 +1,10 @@
+name: cookies-policy
+title: Policy to check cookies security 
+maintainer: madplatt 
+copyright: madplatt 
+copyright_email: mario@example.com
+license: Apache-2.0
+summary: An InSpec Compliance Profile
+version: 0.1.0
+supports:
+  platform: os
