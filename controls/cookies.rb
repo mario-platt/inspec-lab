@@ -30,7 +30,7 @@ end
 
 control 'ASVS-14.4.1' do                        # A unique ID for this control
   impact 0.7                                # The criticality, if this control fails.
-  title 'Create /tmp directory'             # A human-readable title
+  title 'Verify that safe character set is in use'             # A human-readable title
   desc 'All responses should contain X-Content-Type-Options=nosniff'
   describe http('http://192.168.0.6:3000') do                  # The actual test
     its('headers.Content-type') { should cmp 'text/html; charset=utf-8' }
