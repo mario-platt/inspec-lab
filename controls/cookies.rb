@@ -25,6 +25,7 @@ control 'ASVS-14.4.7' do                        # A unique ID for this control
   describe http('http://192.168.0.6:3000').headers do                  # The actual test
     its('x-frame-options') { should cmp 'SAMEORIGIN' }
   end
+  tag 'ASVS-14.4.7'
 end
 
 
